@@ -435,7 +435,7 @@ ul.tblbox li.onerow:nth-child(even) { width:80%; }
 ul.imgbox { list-style-type:none;padding:0px 0px 0px 0px; }
 ul.imgbox li { padding:5px;background-color:#ffffff;border-style:solid border-width:0px 0px 0px 0px; }
 ul.imgbox li.d2 { width:50%; }
-ul.imgbox li.d3 { width:33.333333%; }
+ul.imgbox li.d3 { width:50%; }<!--メモ33%！！！！！！！-->
 ul.imgbox li.d6 { width:16.6666%; }
 ul.imgbox li img { max-width:100%; }
 ul.imgbox li.d11 { width:33.333333%; }
@@ -670,10 +670,10 @@ ul.itembox li .img img { width:50px; height:50px; }
   font-size:12px;
   float: left;
   position: relative;
-  width: auto;/*親メニューの�?*/
+  width: auto;/*親メニューの?*/
   height: 35px;/*親メニューの高さ*/
   line-height: 35px;
-  color: #4D4D4D;/*親メニューの�?��色*/
+  color: #4D4D4D;/*親メニューの???色*/
   text-align:center;
   font-weight:bold;
 }
@@ -683,8 +683,8 @@ ul.itembox li .img img { width:50px; height:50px; }
   text-decoration: none;
 }
 .menu ul li:hover, .menu ul li a:hover {
-  background:#EA2839;/*ホバー時�?親メニューの背景色*/
-  color:#fff;/*ホバー時�?親メニューの�?��色*/
+  background:#EA2839;/*ホバー時・親メニューの背景色*/
+  color:#fff;/*ホバー時・親メニューの???色*/
 }
 .menu ul li ul {
   position: absolute;
@@ -695,7 +695,7 @@ ul.itembox li .img img { width:50px; height:50px; }
 .menu ul li ul li {
   visibility: hidden;
   overflow: hidden;
-  width: 200px;/*サブメニューの�?*/
+  width: 200px;/*サブメニューの?*/
   height: 0;
   background:rgba(255,0,90,0.8);
   text-align:left;
@@ -704,7 +704,7 @@ ul.itembox li .img img { width:50px; height:50px; }
     color:#fff;
 }
 .menu ul li ul li:hover, .menu ul li ul li a:hover {
-  background:#FFAFA9;/*ホバー時�?サブメニューの背景色*/
+  background:#FFAFA9;/*ホバー時・サブメニューの背景色*/
 }
 .menu ul li:hover ul li, .menu ul li a:hover ul li{
   visibility: visible;
