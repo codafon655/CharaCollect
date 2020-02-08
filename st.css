@@ -435,7 +435,7 @@ ul.tblbox li.onerow:nth-child(even) { width:80%; }
 ul.imgbox { list-style-type:none;padding:0px 0px 0px 0px; }
 ul.imgbox li { padding:5px;background-color:#ffffff;border-style:solid border-width:0px 0px 0px 0px; }
 ul.imgbox li.d2 { width:50%; }
-ul.imgbox li.d3 { width:50%; }<!--メモ33%！！！！！！！-->
+ul.imgbox li.d3 { width:100%; }<!--メモ33%！！！！！！！-->
 ul.imgbox li.d6 { width:16.6666%; }
 ul.imgbox li img { max-width:100%; }
 ul.imgbox li.d11 { width:33.333333%; }
