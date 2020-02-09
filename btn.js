@@ -222,8 +222,12 @@ String.prototype.toKHCase = function () {
   }), 
 a("#chara-stand .face-btn").on("click", function () {
 	$fb = a(this);
-	$fb.hasClass("checked") ? ($fb.removeClass("checked"), $fb.parents("li").find("a img").eq(0).attr("src", "").hide()) : ($fb.parent().find(".shadow-btn").removeClass("checked"), 
-	$fb.addClass("checked"), fu = $fb.data("face-url"), 
+	$fb.hasClass("checked") ? 
+	($fb.removeClass("checked"), 
+	$fb.parents("li").find("a img").eq(0).attr("src", "").hide()) : 
+	($fb.parent().find(".shadow-btn").removeClass("checked"), 
+	$fb.addClass("checked"), 
+	fu = $fb.data("face-url"), 
 	$fb.parents("li").find("a img").eq(0).attr("src", fu).show(), 
  	a(window).trigger("resize"))
   }));
