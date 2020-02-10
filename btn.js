@@ -219,10 +219,10 @@ var jun;
 		$fi.width(ofw * r);
 		$fi.css({
 			top: ot * r + "px",
-			left: ol * r + (liw - imw) / 2 + "px"
+			left: ol * r + (liw - imw) / 2 + "px",
 		})
 		coucou++;
-//		alert(a(this).find("img").eq(0).attr('src'));
+//		alert(a(this).find("img").eq(jun).attr('src'));
 	})
 }), a("#chara-stand .face-btn").on("click", function () {
 	$fb = a(this);
