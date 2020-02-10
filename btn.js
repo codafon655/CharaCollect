@@ -205,6 +205,7 @@ String.prototype.toKHCase = function () {
   }
 var coucou = 0;
 var yoko = 0;
+var jun;
 0 < a("#chara-stand").length && (a(window).on("resize", function () {
 	a("#chara-stand li").each(function () {
 		liw = a(this).width();
@@ -222,6 +223,7 @@ var yoko = 0;
 		})
 		coucou++;
 		alert(a(this).find("img").eq(0).attr('src'));
+		alert(a(this).find("img").eq(1).attr('src'));
 	})
 }), a("#chara-stand .face-btn").on("click", function () {
 	$fb = a(this);
@@ -233,6 +235,8 @@ var yoko = 0;
 	$fb.parent().find(".shadow-btn").removeClass("checked"), 
 	$fb.addClass("checked"), 
 	fu = $fb.data("face-url"), 
+	jun = a(this).index(), 
+	alert(jun),
 	$fb.parents("li").find("a img").eq(0).attr("src", fu).show(), 
 	a(window).trigger("resize"))
 	
