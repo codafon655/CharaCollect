@@ -226,17 +226,20 @@ var jun;
 	})
 }), a("#chara-stand .face-btn").on("click", function () {
 	$fb = a(this);
+	jun = a(this).index()+1;
+	alert(jun);
 	$fb.hasClass("checked") ?
-	 (alert("abe1"),
+	 (alert("abe1")
+	,$fb.parents("li").find("a img").eq(jun).attr("src", "").hide(),
 	$fb.removeClass("checked")) : 
-//,$fb.parents("li").find("a img").eq(0).attr("src", "").hide()
+	
 	(alert("abe2"),
-	$fb.parent().find(".shadow-btn").removeClass("checked"), 
+//	$fb.parent().find(".shadow-btn").removeClass("checked"), 
 	$fb.addClass("checked"), 
 	fu = $fb.data("face-url"), 
-	jun = a(this).index()+1, 
-	alert(jun),
+
 	$fb.parents("li").find("a img").eq(jun).attr("src", fu).show(), 
+
 	a(window).trigger("resize"))
 
 }));
