@@ -213,33 +213,32 @@ var jun;
 		ol = a(this).data("ol");
 		ot = a(this).data("ot");
 		ofw = a(this).data("ofw");
-		imw = a(this).find("img").eq(1).width();
+		imw = a(this).find("img").eq(0).width();
 		r = imw / ow;
-		$fi = a(this).find("img").eq(0);
+		$fi = a(this).find("img").eq(jun);
 		$fi.width(ofw * r);
 		$fi.css({
 			top: ot * r + "px",
 			left: ol * r + (liw - imw) / 2 + "px"
 		})
 		coucou++;
-		alert(a(this).find("img").eq(0).attr('src'));
-		alert(a(this).find("img").eq(1).attr('src'));
+//		alert(a(this).find("img").eq(0).attr('src'));
 	})
 }), a("#chara-stand .face-btn").on("click", function () {
 	$fb = a(this);
 	$fb.hasClass("checked") ?
 	 (alert("abe1"),
-	$fb.removeClass("checked"), 
-	$fb.parents("li").find("a img").eq(0).attr("src", "").hide()) : 
+	$fb.removeClass("checked")) : 
+//,$fb.parents("li").find("a img").eq(0).attr("src", "").hide()
 	(alert("abe2"),
 	$fb.parent().find(".shadow-btn").removeClass("checked"), 
 	$fb.addClass("checked"), 
 	fu = $fb.data("face-url"), 
-	jun = a(this).index(), 
+	jun = a(this).index()+1, 
 	alert(jun),
-	$fb.parents("li").find("a img").eq(0).attr("src", fu).show(), 
+	$fb.parents("li").find("a img").eq(jun).attr("src", fu).show(), 
 	a(window).trigger("resize"))
-	
+
 }));
 
 
