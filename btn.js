@@ -203,34 +203,42 @@ String.prototype.toKHCase = function () {
       }
     })
   }
-  0 < a("#chara-stand").length && (a(window).on("resize", function () {
-    a("#chara-stand li").each(function () {
-      liw = a(this).width();
-      ow = a(this).data("ow");
-      ol = a(this).data("ol");
-      ot = a(this).data("ot");
-      ofw = a(this).data("ofw");
-      imw = a(this).find("img").eq(1).width();
-      r = imw / ow;
-      $fi = a(this).find("img").eq(0);
-      $fi.width(ofw * r);
-      $fi.css({
-        top: ot * r + "px",
-        left: ol * r + (liw - imw) / 2 + "px"
-      })
-    })
-  }), 
-a("#chara-stand .face-btn").on("click", function () {
+var coucou = 0;
+var yoko = 0;
+0 < a("#chara-stand").length && (a(window).on("resize", function () {
+	a("#chara-stand li").each(function () {
+		liw = a(this).width();
+		ow = a(this).data("ow");
+		ol = a(this).data("ol");
+		ot = a(this).data("ot");
+		ofw = a(this).data("ofw");
+		imw = a(this).find("img").eq(1).width();
+		r = imw / ow;
+		$fi = a(this).find("img").eq(0);
+		$fi.width(ofw * r);
+		$fi.css({
+			top: ot * r + "px",
+			left: ol * r + (liw - imw) / 2 + "px"
+		})
+		coucou++;
+		alert(a(this).find("img").eq(0).attr('src'));
+	})
+}), a("#chara-stand .face-btn").on("click", function () {
 	$fb = a(this);
-	$fb.hasClass("checked") ? 
-	($fb.removeClass("checked"), 
+	$fb.hasClass("checked") ?
+	 (alert("abe1"),
+	$fb.removeClass("checked"), 
 	$fb.parents("li").find("a img").eq(0).attr("src", "").hide()) : 
-	($fb.parent().find(".shadow-btn").removeClass("checked"), 
+	(alert("abe2"),
+	$fb.parent().find(".shadow-btn").removeClass("checked"), 
 	$fb.addClass("checked"), 
 	fu = $fb.data("face-url"), 
 	$fb.parents("li").find("a img").eq(0).attr("src", fu).show(), 
- 	a(window).trigger("resize"))
-  }));
+	a(window).trigger("resize"))
+	
+}));
+
+
   0 < a(".rep-btn").length && (a(".rep-filter").on("keyup", function () {
     var b = a(this).val(),
       c = a(this).data("filter-group");
