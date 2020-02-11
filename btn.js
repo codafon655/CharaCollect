@@ -230,20 +230,28 @@ var jun;
 	$fb = a(this);
 	jun = a(this).index()+1;
 //	alert(jun);
-	$fb.hasClass("checked") ?
-	 (//alert("abe1"),
-	$fb.parents("li").find("a img").eq(jun).attr("src", "").hide(),
-	$fb.removeClass("checked")) : 
+if($fb.hasClass("checked")){
+	 //alert("abe1"),
+	$fb.parents("li").find("a img").eq(jun).attr("src", "").hide();
+	$fb.removeClass("checked");
+}else{
 	
-	(//alert("abe2"),
+	//alert("abe2"),
 
 //	$fb.parent().find(".shadow-btn").removeClass("checked"), 
-//	$fb.addClass("checked"), 
-	fu = $fb.data("face-url"), 
+	if(0<=jun-1&&jun-1<=8){
+	for(var io=0; io<=8; io++){
+		$fb.parent().find(".shadow-btn").eq(io).removeClass("checked")
+	}
+	}
 
-	$fb.parents("li").find("a img").eq(jun).attr("src", fu).show(), 
+	$fb.addClass("checked");
+	fu = $fb.data("face-url");
 
-	a(window).trigger("resize"))
+	$fb.parents("li").find("a img").eq(jun).attr("src", fu).show(); 
+
+	a(window).trigger("resize");
+}
 
 }));
 
