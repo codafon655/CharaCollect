@@ -231,7 +231,9 @@ $(document).ready( function(){
 		r = imw / ow;
 		$fi = a(this).find("img").eq(jun);
 	//	$fi.width(ofw * r);
+		if(jun-1!=27&&jun-1!=28){
 		$fi.zIndex(coucou);
+		}
 		$fi = a(this).find("img");
 	//	alert(jun);
 		$fi.css({
@@ -248,6 +250,7 @@ $(document).ready( function(){
 if($fb.hasClass("checked")){
 	 //alert("abe1"),
 //	$fb.parents("li").find("a img").eq(jun).attr("src", "").hide();
+//	$("#chara-stand .li").eq(jun).attr("src", "");
 //	$fb.removeClass("checked");
 }else{
 	
@@ -257,24 +260,34 @@ if($fb.hasClass("checked")){
 	if(0<=jun-1&&jun-1<=8){
 	for(var io=0; io<=8; io++){
 		$fb.parent().find(".shadow-btn").eq(io).removeClass("checked");
+		$fb.parents("li").find("a img").eq(io+1).attr("src", "").hide();
 	}
 	}
 
 	if(9<=jun-1&&jun-1<=19){
 	for(var io=9; io<=19; io++){
 		$fb.parent().find(".shadow-btn").eq(io).removeClass("checked");
+	$fb.parents("li").find("a img").eq(io+1).attr("src", "").hide();
 	}
 	}
 
 	if(20<=jun-1&&jun-1<=24){
 	for(var io=20; io<=24; io++){
 		$fb.parent().find(".shadow-btn").eq(io).removeClass("checked");
+	$fb.parents("li").find("a img").eq(io+1).attr("src", "").hide();
 	}
 	}
 
 	if(25<=jun-1&&jun-1<=26){
 	for(var io=25; io<=26; io++){
 		$fb.parent().find(".shadow-btn").eq(io).removeClass("checked");
+	$fb.parents("li").find("a img").eq(io+1).attr("src", "").hide();
+	}
+	}
+	if(27<=jun-1&&jun-1<=28){
+	for(var io=27; io<=28; io++){
+		$fb.parent().find(".shadow-btn").eq(io).removeClass("checked");
+	$fb.parents("li").find("a img").eq(io+1).attr("src", "").hide();
 	}
 	}
 
