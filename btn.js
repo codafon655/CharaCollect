@@ -206,6 +206,20 @@ String.prototype.toKHCase = function () {
 var coucou = 0;
 var yoko = 0;
 var jun;
+var souka=0;
+$(document).ready( function(){
+// ページ読み込み時に実行したい処理
+//	alert("ju");
+	$("#chara-stand .face-btn").eq(0).addClass("checked"); 
+	$("#chara-stand .face-btn").eq(9).addClass("checked"); 
+	$("#chara-stand .face-btn").eq(20).addClass("checked"); 
+	$("#chara-stand .face-btn").eq(25).addClass("checked"); 
+});
+
+
+	
+
+
 0 < a("#chara-stand").length && (a(window).on("resize", function () {
 	a("#chara-stand li").each(function () {
 		liw = a(this).width();
@@ -216,8 +230,9 @@ var jun;
 		imw = a(this).find("img").eq(0).width();
 		r = imw / ow;
 		$fi = a(this).find("img").eq(jun);
-		$fi.width(ofw * r);
+	//	$fi.width(ofw * r);
 		$fi.zIndex(coucou);
+		$fi = a(this).find("img");
 	//	alert(jun);
 		$fi.css({
 			top: ot * r + "px",
@@ -232,8 +247,8 @@ var jun;
 //	alert(jun);
 if($fb.hasClass("checked")){
 	 //alert("abe1"),
-	$fb.parents("li").find("a img").eq(jun).attr("src", "").hide();
-	$fb.removeClass("checked");
+//	$fb.parents("li").find("a img").eq(jun).attr("src", "").hide();
+//	$fb.removeClass("checked");
 }else{
 	
 	//alert("abe2"),
@@ -241,9 +256,28 @@ if($fb.hasClass("checked")){
 //	$fb.parent().find(".shadow-btn").removeClass("checked"), 
 	if(0<=jun-1&&jun-1<=8){
 	for(var io=0; io<=8; io++){
-		$fb.parent().find(".shadow-btn").eq(io).removeClass("checked")
+		$fb.parent().find(".shadow-btn").eq(io).removeClass("checked");
 	}
 	}
+
+	if(9<=jun-1&&jun-1<=19){
+	for(var io=9; io<=19; io++){
+		$fb.parent().find(".shadow-btn").eq(io).removeClass("checked");
+	}
+	}
+
+	if(20<=jun-1&&jun-1<=24){
+	for(var io=20; io<=24; io++){
+		$fb.parent().find(".shadow-btn").eq(io).removeClass("checked");
+	}
+	}
+
+	if(25<=jun-1&&jun-1<=26){
+	for(var io=25; io<=26; io++){
+		$fb.parent().find(".shadow-btn").eq(io).removeClass("checked");
+	}
+	}
+
 
 	$fb.addClass("checked");
 	fu = $fb.data("face-url");
