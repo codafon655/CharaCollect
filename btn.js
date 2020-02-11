@@ -217,7 +217,7 @@ var jun;
 		r = imw / ow;
 		$fi = a(this).find("img").eq(jun);
 		$fi.width(ofw * r);
-		$fi.zIndex(jun);
+		$fi.zIndex(coucou);
 	//	alert(jun);
 		$fi.css({
 			position: "absolute",
