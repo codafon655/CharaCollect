@@ -9,6 +9,7 @@
 <meta http-equiv="Content-Language" content="ja">
 <meta name="google" content="notranslate">
 <meta name="twitter:card" content="summary">
+<meta property="og:url" content="https://codafon655.github.io/CharaCollect/" />
 <meta property="og:title" content="ぬきたし立ち絵メーカー">
 <meta property="og:description" content="ぬきたしの立ち絵を作るサイト">
 <meta property="og:image" content="https://blog-imgs-129.fc2.com/6/0/5/605050end/202002120314531ef.png">
@@ -139,7 +140,7 @@
                   </ul>
   </article>
 </section>
-
+<p style="margin-bottom:50em;">
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
