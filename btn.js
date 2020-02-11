@@ -220,7 +220,6 @@ var jun;
 		$fi.zIndex(coucou);
 	//	alert(jun);
 		$fi.css({
-			position: "absolute",
 			top: ot * r + "px",
 			left: ol * r + (liw - imw) / 2 + "px",
 		})
@@ -230,7 +229,7 @@ var jun;
 }), a("#chara-stand .face-btn").on("click", function () {
 	$fb = a(this);
 	jun = a(this).index()+1;
-	alert(jun);
+//	alert(jun);
 	$fb.hasClass("checked") ?
 	 (//alert("abe1"),
 	$fb.parents("li").find("a img").eq(jun).attr("src", "").hide(),
@@ -239,7 +238,7 @@ var jun;
 	(//alert("abe2"),
 
 //	$fb.parent().find(".shadow-btn").removeClass("checked"), 
-	$fb.addClass("checked"), 
+//	$fb.addClass("checked"), 
 	fu = $fb.data("face-url"), 
 
 	$fb.parents("li").find("a img").eq(jun).attr("src", fu).show(), 
