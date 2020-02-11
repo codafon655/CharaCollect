@@ -234,7 +234,7 @@ $(document).ready( function(){
 		if(jun-1!=28){
 		$fi.zIndex(coucou);
 		}else{
-		$fi.zIndex(99999);
+		$fi.zIndex(9999);
 		}
 		$fi = a(this).find("img");
 	//	alert(jun);
