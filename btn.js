@@ -231,7 +231,7 @@ $(document).ready( function(){
 		r = imw / ow;
 		$fi = a(this).find("img").eq(jun);
 	//	$fi.width(ofw * r);
-		if(jun-1!=27&&jun-1!=28){
+		if(jun-1!=28){
 		$fi.zIndex(coucou);
 		}else{
 		$fi.zIndex(99999);
