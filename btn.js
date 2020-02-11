@@ -218,7 +218,7 @@ var jun;
 		$fi = a(this).find("img").eq(jun);
 		$fi.width(ofw * r);
 		$fi.zIndex(jun);
-		alert(jun);
+	//	alert(jun);
 		$fi.css({
 			position: "absolute",
 			top: ot * r + "px",
@@ -232,11 +232,11 @@ var jun;
 	jun = a(this).index()+1;
 	alert(jun);
 	$fb.hasClass("checked") ?
-	 (alert("abe1")
-	,$fb.parents("li").find("a img").eq(jun).attr("src", "").hide(),
+	 (//alert("abe1"),
+	$fb.parents("li").find("a img").eq(jun).attr("src", "").hide(),
 	$fb.removeClass("checked")) : 
 	
-	(alert("abe2"),
+	(//alert("abe2"),
 
 //	$fb.parent().find(".shadow-btn").removeClass("checked"), 
 	$fb.addClass("checked"), 
