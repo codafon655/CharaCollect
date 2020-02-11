@@ -217,7 +217,10 @@ var jun;
 		r = imw / ow;
 		$fi = a(this).find("img").eq(jun);
 		$fi.width(ofw * r);
+		$fi.zIndex(jun);
+		alert(jun);
 		$fi.css({
+			position: "absolute",
 			top: ot * r + "px",
 			left: ol * r + (liw - imw) / 2 + "px",
 		})
@@ -234,6 +237,7 @@ var jun;
 	$fb.removeClass("checked")) : 
 	
 	(alert("abe2"),
+
 //	$fb.parent().find(".shadow-btn").removeClass("checked"), 
 	$fb.addClass("checked"), 
 	fu = $fb.data("face-url"), 
