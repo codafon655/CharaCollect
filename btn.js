@@ -258,9 +258,9 @@ if($fb.hasClass("checked")){
 //	$("#chara-stand .li").eq(jun).attr("src", "");
 //	$fb.removeClass("checked");
 }else{
-	
-	fu = $fb.data("face-url");
-	$fb.parents("li").find("a img").eq(jun).attr("src", fu).show(); 
+//	fu = $fb.data("face-url");
+//	$fb.parents("li").find("a img").eq(jun).attr("src", fu).show(); 
+
 
 	//alert("abe2"),
 
@@ -268,41 +268,39 @@ if($fb.hasClass("checked")){
 	if(0<=jun-1&&jun-1<=8){
 	for(var io=0; io<=8; io++){
 		$fb.parent().find(".shadow-btn").eq(io).removeClass("checked");
-		$fb.parents("li").find("a img").eq(io+1).attr("src", "").hide();
 	}
 	}
 	if(9<=jun-1&&jun-1<=19){
 	for(var io=9; io<=19; io++){
-		$fb.parent().find(".shadow-btn").eq(io).removeClass("checked");
-	$fb.parents("li").find("a img").eq(io+1).attr("src", "").hide();
+	$fb.parent().find(".shadow-btn").eq(io).removeClass("checked");
 	}
 	}
-
 	if(20<=jun-1&&jun-1<=24){
 	for(var io=20; io<=24; io++){
-		$fb.parent().find(".shadow-btn").eq(io).removeClass("checked");
-	$fb.parents("li").find("a img").eq(io+1).attr("src", "").hide();
+	$fb.parent().find(".shadow-btn").eq(io).removeClass("checked");
 	}
 	}
 
 	if(25<=jun-1&&jun-1<=26){
 	for(var io=25; io<=26; io++){
-		$fb.parent().find(".shadow-btn").eq(io).removeClass("checked");
-	$fb.parents("li").find("a img").eq(io+1).attr("src", "").hide();
+	$fb.parent().find(".shadow-btn").eq(io).removeClass("checked");
 	}
 	}
 	if(27<=jun-1&&jun-1<=28){
 	for(var io=27; io<=28; io++){
-		$fb.parent().find(".shadow-btn").eq(io).removeClass("checked");
+	$fb.parent().find(".shadow-btn").eq(io).removeClass("checked");
 	$fb.parents("li").find("a img").eq(io+1).attr("src", "").hide();
 	}
 	}
 	if(29<=jun-1&&jun-1<=31){
 	for(var io=29; io<=31; io++){
-		$fb.parent().find(".shadow-btn").eq(io).removeClass("checked");
+	$fb.parent().find(".shadow-btn").eq(io).removeClass("checked");
 	$fb.parents("li").find("a img").eq(io+1).attr("src", "").hide();
 	}
 	}
+		fu = $fb.data("face-url");
+	$fb.parents("li").find("a img").eq(jun).attr("src", fu).show(); 
+
 
 	$fb.addClass("checked");
 	a(window).trigger("resize");
