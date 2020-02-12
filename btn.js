@@ -214,6 +214,9 @@ $(document).ready( function(){
 	$("#chara-stand .face-btn").eq(9).addClass("checked"); 
 	$("#chara-stand .face-btn").eq(20).addClass("checked"); 
 	$("#chara-stand .face-btn").eq(25).addClass("checked"); 
+	$("#chara-stand .face-btn").eq(27).addClass("checked"); 
+	$("#chara-stand .face-btn").eq(29).addClass("checked"); 
+
 });
 
 
@@ -292,7 +295,12 @@ if($fb.hasClass("checked")){
 	$fb.parents("li").find("a img").eq(io+1).attr("src", "").hide();
 	}
 	}
-
+	if(29<=jun-1&&jun-1<=31){
+	for(var io=29; io<=31; io++){
+		$fb.parent().find(".shadow-btn").eq(io).removeClass("checked");
+	$fb.parents("li").find("a img").eq(io+1).attr("src", "").hide();
+	}
+	}
 
 	$fb.addClass("checked");
 	fu = $fb.data("face-url");
