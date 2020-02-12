@@ -258,8 +258,8 @@ if($fb.hasClass("checked")){
 //	$("#chara-stand .li").eq(jun).attr("src", "");
 //	$fb.removeClass("checked");
 }else{
-//	fu = $fb.data("face-url");
-//	$fb.parents("li").find("a img").eq(jun).attr("src", fu).show(); 
+	fu = $fb.data("face-url");
+	$fb.parents("li").find("a img").eq(jun).attr("src", fu).show(); 
 
 
 	//alert("abe2"),
