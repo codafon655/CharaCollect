@@ -259,6 +259,9 @@ if($fb.hasClass("checked")){
 //	$fb.removeClass("checked");
 }else{
 	
+	fu = $fb.data("face-url");
+	$fb.parents("li").find("a img").eq(jun).attr("src", fu).show(); 
+
 	//alert("abe2"),
 
 //	$fb.parent().find(".shadow-btn").removeClass("checked"), 
@@ -268,7 +271,6 @@ if($fb.hasClass("checked")){
 		$fb.parents("li").find("a img").eq(io+1).attr("src", "").hide();
 	}
 	}
-
 	if(9<=jun-1&&jun-1<=19){
 	for(var io=9; io<=19; io++){
 		$fb.parent().find(".shadow-btn").eq(io).removeClass("checked");
@@ -303,10 +305,6 @@ if($fb.hasClass("checked")){
 	}
 
 	$fb.addClass("checked");
-	fu = $fb.data("face-url");
-
-	$fb.parents("li").find("a img").eq(jun).attr("src", fu).show(); 
-
 	a(window).trigger("resize");
 }
 
