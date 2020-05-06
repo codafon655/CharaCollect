@@ -14,17 +14,17 @@ $(document).ready( function(){
 	$("#chara-stand .face-btn").eq(27).addClass("checked"); 
 	$("#chara-stand .face-btn").eq(29).addClass("checked"); 
 
-	$fb = $("#chara-stand .face-btn").eq(0);
-	fu = $fb.data("face-url");
-	$fb.parents("li").find("a img").eq(1).attr("src", fu).show(); 
+//	$fb = $("#chara-stand .face-btn").eq(0);
+//	fu = $fb.data("face-url");
+//	$fb.parents("li").find("a img").eq(1).attr("src", fu).show(); 
 
-	$fb = $("#chara-stand .face-btn").eq(9);
-	fu = $fb.data("face-url");
-	$fb.parents("li").find("a img").eq(10).attr("src", fu).show(); 
+//	$fb = $("#chara-stand .face-btn").eq(9);
+//	fu = $fb.data("face-url");
+//	$fb.parents("li").find("a img").eq(10).attr("src", fu).show(); 
 
-	$fb = $("#chara-stand .face-btn").eq(20);
-	fu = $fb.data("face-url");
-	$fb.parents("li").find("a img").eq(21).attr("src", fu).show(); 
+//	$fb = $("#chara-stand .face-btn").eq(20);
+//	fu = $fb.data("face-url");
+//	$fb.parents("li").find("a img").eq(21).attr("src", fu).show(); 
 
 
 	a("#chara-stand li").each(function () {
